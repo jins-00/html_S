@@ -39,8 +39,7 @@ body {
 
 #list_container {
     display: flex;
-    justify-content: space-between;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     position: absolute;
     left: 50%;
@@ -55,8 +54,23 @@ body {
 }
 
 #title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     width: 600px;
     height: 70px;
+    margin-top: 5%;
+    animation: show 1s;
+}
+
+@keyframes show {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 #list_list {
@@ -112,62 +126,66 @@ body {
 
 #cartoon_Ko {
     animation: reveal 2s forwards;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
 }
 #cartoon_Eng {
     animation: reveal 2s forwards;
+    animation-fill-mode: backwards;
+    animation-delay: 1s;
 }
 
 #webtoon_Ko {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
 }
 #webtoon_Eng {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
 }
 
 #illust_Ko {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 #illust_Eng {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 
 #personal_Ko {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
 }
 #personal_Eng {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 1.5s;
+    animation-delay: 2.5s;
 }
 
 #SNS {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 2.5s;
+    animation-delay: 3.5s;
 }
 #SNS_ad {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 2.5s;
+    animation-delay: 3.5s;
 }
 
 #Email {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
 #Email_ad {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 3s;
+    animation-delay: 4s;
 }
