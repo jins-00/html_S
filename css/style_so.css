@@ -2,37 +2,46 @@ body {
     background-color: black;
     margin: 0px;
     width: 100%;
-    height: 1280px;
+    min-height: 100vh;
+    height: 60%;
     font-family: 'Wittgenstein', 'Nanum Myeongjo';
-    font-size: 30px;
+    font-size: 2.2rem;
     color: white;
     text-align: center;
 }
 
 #main_container {
+    display: flex;
+    align-items: center;
     position: relative;
+    box-sizing: border-box;
     width: 100%;
-    height: 40%;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    min-height: 100vh;
+    max-height: 300vh;
 
 }
 
 #in_container {
     position: absolute;
+    box-sizing: border-box;
     left: 0;
     right: 0;
     overflow: hidden;
     width: 100%;
-    height: 80%;
+    min-height: 60vh;
     background-color: #3d3c3c;
     background: linear-gradient(211deg, rgba(0, 0, 0, 0.9), rgba(56, 56, 56, 0.1) 30%),
         linear-gradient(60deg, rgba(0, 0, 0, 0.9), rgba(56, 56, 56, 0.1) 30%),
         linear-gradient(339deg, rgba(0, 0, 0, 0.9), rgba(56, 56, 56, 0.1) 30%),
-        linear-gradient(111deg, rgba(0, 0, 0, 0.9), rgba(56, 56, 56, 0.1) 30%);
+        linear-gradient(111deg, rgba(0, 0, 0, 0.9), rgba(56, 56, 56, 0.1) 30%),
+        linear-gradient(180deg, rgba(41, 41, 41, 0.5), rgba(56, 56, 56, 0.03) 70%);
 }
 
 #list_container {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     left: 50%;
     margin-left: -300px;
@@ -41,13 +50,21 @@ body {
 }
 
 #in_list_container {
-    margin-top: 10%;
+    display: flex;
+    align-items: center;
 }
 
 #title {
-    margin-top: 20%;
     width: 600px;
     height: 70px;
+}
+
+#list_list {
+    font-size: 1.7rem;
+}
+
+#link_list {
+    font-size: 1.5rem;
 }
 
 .in_list {
@@ -68,7 +85,6 @@ body {
     justify-content: center;
     width: 600px;
     margin-bottom: 2%;
-    font-size: 25px;
     overflow: hidden;
 }
 
