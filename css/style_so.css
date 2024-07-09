@@ -137,21 +137,21 @@ body {
 #SNS {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
 }
 #SNS_ad {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 3s;
+    animation-delay: 2.5s;
 }
 
 #Email {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 3.5s;
+    animation-delay: 3s;
 }
 #Email_ad {
     animation: reveal 2s forwards;
     animation-fill-mode: backwards;
-    animation-delay: 3.5s;
+    animation-delay: 3s;
 }
